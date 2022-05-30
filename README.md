@@ -82,8 +82,7 @@ getPlantInfo();
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS 3 properties
+- JavaScript ES6
 
 ### What I learned
 
