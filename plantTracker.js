@@ -1,22 +1,23 @@
 const indoorPlants = [];
 const outdoorPlants = [];
-let welcome = prompt("Welcome to your Plant Tracker! Are you ready to begin (yes or no)?").toLowerCase();
+let welcome = prompt("Welcome to your Plant Tracker! Are you ready to begin? (type: yes or no)").toLowerCase();
 
 function getPlantInfo() {
     while (welcome === "yes") {
         addRemovePlants();
-        // alert("Great! Your indoor plants are: " + indoorPlants + ", and your outdoor plants are " + outdoorPlants ".");
-        welcome = prompt("Ready for the next plant. Do you wish to continue (yes or no)?");
+        alert("Great! Your indoor plants are: " + indoorPlants + ", and your outdoor plants are " + outdoorPlants + ".");
+        welcome = prompt("Ready for the next action. Do you wish to continue? (type: yes or no)");
     }
     alert("Okay, have a nice day!");
 }
 
 function addRemovePlants() {
-let typePrompt = prompt("Is your plant indoor or outdoor?");
+let typePrompt = prompt("Which plant list would you like to change? (type: indoor or outdoor)?");
 type = typePrompt.toLowerCase();
-let actionPrompt = prompt("Do you wish to add or remove the plant?");
+    alert("Current Indoor Plants List:" + indoorPlants  + "     " + "Current Outdoor Plants List:" + outdoorPlants);
+let actionPrompt = prompt("Do you wish to add a new plant to the list, or to remove the last plant from the list? (type: add or remove)?");
 action = actionPrompt.toLowerCase();
-let name = prompt("What is the name of your plant?");
+let name = prompt("What is the name of the plant you wish to add? (If removing a plant, leave blank.)");
 
     if (type === "indoor" && action === "add") {
         indoorPlants.push(name);
@@ -27,14 +28,14 @@ let name = prompt("What is the name of your plant?");
         alert("Outdoor plants:" + outdoorPlants);
     }   
     else if (type === "indoor" && action === "remove") {
-        indoorPlants.pop(name);
+        indoorPlants.pop();
         alert("Indoor plants:" + indoorPlants);
     }
     else if (type === "outdoor" && action === "remove") {
-        outdoorPlants.pop(name);
+        outdoorPlants.pop();
         alert("Outdoor plants:" + outdoorPlants);
     } else {
-        alert("Have a nice day!");
+        alert("Hmm, something went wrong.  Please try again.");
     }
     console.log("Indoor Plants:");
     console.log(indoorPlants);
