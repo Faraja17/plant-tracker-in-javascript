@@ -5,7 +5,7 @@ let welcome = prompt("Welcome to your Plant Tracker! Current Indoor Plants List(
 function getPlantInfo() {
     while (welcome === "yes") {
         addRemovePlants();
-        alert("Great! Your " + indoorPlants.length + " indoor plants are: " + indoorPlants + "  , and your" + outdoorPlants.length + " outdoor plants are: " + outdoorPlants + ".");
+        alert("Great! Your " + indoorPlants.length + " indoor plants are: " + indoorPlants + "  , and your " + outdoorPlants.length + " outdoor plants are: " + outdoorPlants + ".");
         welcome = prompt("Ready for the next action. Do you wish to continue? (type: yes or no)");
     }
     alert("Okay, have a nice day!");
