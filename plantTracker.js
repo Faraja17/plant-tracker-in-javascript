@@ -1,7 +1,7 @@
 const indoorPlants = [];
 const outdoorPlants = [];
-let welcome = prompt("Welcome to your Plant Tracker! Current Indoor Plants List(" + indoorPlants.length + "):" + indoorPlants  + "     " + "Current Outdoor Plants List(" +  outdoorPlants.length + "):" + outdoorPlants  + "     " +  "Are you ready to begin? (type: yes or no)").toLowerCase();
-
+let welcomePrompt = prompt("Welcome to your Plant Tracker! Current Indoor Plants List(" + indoorPlants.length + "):" + indoorPlants  + "     " + "Current Outdoor Plants List(" +  outdoorPlants.length + "):" + outdoorPlants  + "     " +  "Are you ready to begin? (type: yes or no)");
+welcome = welcomePrompt.toLowerCase();
 function getPlantInfo() {
     while (welcome === "yes") {
         addRemovePlants();
