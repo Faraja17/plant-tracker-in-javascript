@@ -1,13 +1,14 @@
 const indoorPlants = [];
 const outdoorPlants = [];
-let welcome = prompt("Welcome to your Plant Tracker!  Do you wish to add or remove a plant (yes or no)?").toLowerCase();
+let welcome = prompt("Welcome to your Plant Tracker! Are you ready to begin (yes or no)?").toLowerCase();
 
 function getPlantInfo() {
     while (welcome === "yes") {
         addRemovePlants();
-        welcome = prompt("Do you wish to add or remove another plant (yes or no)?")
+        // alert("Great! Your indoor plants are: " + indoorPlants + ", and your outdoor plants are " + outdoorPlants ".");
+        welcome = prompt("Ready for the next plant. Do you wish to continue (yes or no)?");
     }
-    alert("Have a nice day!");
+    alert("Okay, have a nice day!");
 }
 
 function addRemovePlants() {
@@ -19,15 +20,19 @@ let name = prompt("What is the name of your plant?");
 
     if (type === "indoor" && action === "add") {
         indoorPlants.push(name);
+        alert("Indoor plants:" + indoorPlants);
     }
     else if (type === "outdoor" && action === "add") {
         outdoorPlants.push(name);
+        alert("Outdoor plants:" + outdoorPlants);
     }   
     else if (type === "indoor" && action === "remove") {
         indoorPlants.pop(name);
+        alert("Indoor plants:" + indoorPlants);
     }
     else if (type === "outdoor" && action === "remove") {
         outdoorPlants.pop(name);
+        alert("Outdoor plants:" + outdoorPlants);
     } else {
         alert("Have a nice day!");
     }
