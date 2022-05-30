@@ -74,7 +74,7 @@ getPlantInfo();
 
 ### Links
 
-- Live Site URL: [My Plant Tracker on CodePen](https://codepen.io/faraja17/pen/gOvvEWE?editors=1112)
+- Live Site URL: [My Plant Tracker on CodePen](https://codepen.io/faraja17/pen/XWZEWoz)
 
 ## My process
 
