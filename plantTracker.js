@@ -45,10 +45,11 @@ let name = prompt("What is the name of the plant you wish to add? (If removing a
     } else {
         alert("Hmm, something went wrong.  Please try again.");
     }
-    console.log("Indoor Plants:");
-    console.log(indoorPlants);
-    console.log("Outdoor Plants:");
-    console.log(outdoorPlants);
 }
 
 getPlantInfo();
+
+console.log("Indoor Plants:");
+console.log(indoorPlants);
+console.log("Outdoor Plants:");
+console.log(outdoorPlants);
