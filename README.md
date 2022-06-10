@@ -30,7 +30,7 @@ I would like the user to be able to retrieve, add, and delete information as nee
 ```
 const indoorPlants = [];
 const outdoorPlants = [];
-let welcomePrompt = prompt("Welcome to your Plant Tracker! Current Indoor Plants List(" + indoorPlants.length + "):" + indoorPlants  + "     " + "Current Outdoor Plants List(" +  outdoorPlants.length + "):" + outdoorPlants  + "     " +  "Are you ready to begin? (type: yes or no)");
+let welcomePrompt = prompt(`Welcome to your Plant Tracker! Current Indoor Plants List (${indoorPlants.length}): ${indoorPlants}. Current Outdoor Plants List (${outdoorPlants.length}): ${outdoorPlants}. Are you ready to begin? (type: yes or no)`);
 welcome = welcomePrompt.toLowerCase();
 function getPlantInfo() {
     let indoorPlantWords = "plants are";
@@ -47,7 +47,7 @@ function getPlantInfo() {
         } else {
             outdoorPlantWords = "plants are";
         }
-        alert(`Great! Your ${indoorPlants.length} indoor ${indoorPlantWords}: ${indoorPlants} and your ${outdoorPlants.length} outdoor ${outdoorPlantWords}: ${outdoorPlants}`);
+        alert(`Great! Your ${indoorPlants.length} indoor ${indoorPlantWords}: ${indoorPlants}, and your ${outdoorPlants.length} outdoor ${outdoorPlantWords}: ${outdoorPlants}.`);
         welcome = prompt("Ready for the next action. Do you wish to continue? (type: yes or no)");
         welcome = welcome.toLowerCase();
     }
