@@ -6,7 +6,7 @@ Descripton: This is my first completely original idea for a JavaScript project. 
 
 - [Overview](#overview)
   - [My Code](#my-code)
-  - [Links](#links)
+  - [Link(s) to the Live Site](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
