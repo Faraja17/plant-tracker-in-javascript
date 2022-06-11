@@ -27,7 +27,7 @@ I would like the user to be able to retrieve, add, and delete information as nee
 
 ### My Code
 
-```
+```javascript
 const indoorPlants = [];
 const outdoorPlants = [];
 let welcomePrompt = prompt(`Welcome to your Plant Tracker! Current Indoor Plants List (${indoorPlants.length}): ${indoorPlants}. Current Outdoor Plants List (${outdoorPlants.length}): ${outdoorPlants}. Are you ready to begin? (type: yes or no)`);
